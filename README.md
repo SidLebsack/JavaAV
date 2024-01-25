@@ -1,40 +1,9 @@
-SpinKit-ObjC
-============
+# 자동차 경주 게임
+## 진행 방법
+* 자동차 경주 게임 요구사항을 파악한다.
+* 요구사항에 대한 구현을 완료한 후 자신의 github 아이디에 해당하는 브랜치에 Pull Request(이하 PR)를 통해 코드 리뷰 요청을 한다.
+* 코드 리뷰 피드백에 대한 개선 작업을 하고 다시 PUSH한다.
+* 모든 피드백을 완료하면 다음 단계를 도전하고 앞의 과정을 반복한다.
 
-UIKit port of [SpinKit](https://github.com/tobiasahlin/SpinKit).
-
-Usage
------
-
-Simply instantiate `RTSpinKitView` with the desired style and add to your view hierarchy.
-
-    RTSpinKitView *spinner = [[RTSpinKitView alloc] initWithStyle:RTSpinKitViewStyleWave];
-    [self.view addSubview:spinner];
-
-Available styles:
-
-* `RTSpinKitViewStylePlane`
-* `RTSpinKitViewStyleBounce`
-* `RTSpinKitViewStyleWave`
-* `RTSpinKitViewStyleWanderingCubes`
-* `RTSpinKitViewStylePulse`
-
-MBProgressHUD
--------------
-
-SpinKit integrates nicely with the amazing [MBProgressHUD](https://github.com/jdg/MBProgressHUD) library:
-
-    RTSpinKitView *spinner = [[RTSpinKitView alloc] initWithStyle:RTSpinKitViewStyleWave color:[UIColor whiteColor]];
-
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.square = YES;
-    hud.mode = MBProgressHUDModeCustomView;
-    hud.customView = spinner;
-    hud.labelText = NSLocalizedString(@"Loading", @"Loading");
-
-    [spinner startAnimating];
-
-Acknowledgements
-----------------
-
-Animations based on [SpinKit](https://github.com/tobiasahlin/SpinKit) by [Tobias Ahlin](https://github.com/tobiasahlin).
+## 온라인 코드 리뷰 과정
+* [텍스트와 이미지로 살펴보는 온라인 코드 리뷰 과정](https://github.com/next-step/nextstep-docs/tree/master/codereview)
